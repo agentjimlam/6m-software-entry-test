@@ -11,16 +11,29 @@
 
 
 // Task 1: Add code here
+const patientList = [];
 
 function addPatient(patientName){
     // Task 2: Add code here
+    patientList.push(patientName); // .push() = adds one or more new elements to the end of an array and returns the new length
+
 }
 
 // Task 3: Add code here
-
+function listPatient() {
+    console.log(patientList); // print out patientList array when function is called
+}
 
 addPatient("John");
 addPatient("Mary");
 addPatient("Mark");
 
 listPatient(); // This should list ["John", "Mary", "Mark"]
+
+
+/* Additional testing...
+
+addPatient("Ken");
+listPatient();
+
+*/
