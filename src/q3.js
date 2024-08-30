@@ -21,9 +21,28 @@ const dog = {
     breed: "dog"
 }
 
-const cat = dog; // Modify this line
+const cat = {...dog}; // Modify this line
 
 cat.breed = "cat";
 
 console.log("dog", dog); // If success, prints "dog { breed: 'dog' }"
 
+// How to use spread operator https://www.w3schools.com/howto/howto_js_spread_operator.asp 
+
+/* Example for objects
+
+const myVehicle = {
+  brand: 'Ford',
+  model: 'Mustang',
+  color: 'red'
+}
+
+const updateMyVehicle = {
+  type: 'car',
+  year: 2021,
+  color: 'yellow'
+}
+
+const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
+
+*/ 
